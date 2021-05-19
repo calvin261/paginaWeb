@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "SF-Pro-Text";
+  src: local("SF-Pro-Text"),
+    url(./fonts/FontsFree-Net-SFProText-Regular.ttf) format("truetype");
+}
+
+.App {
+  text-align: center;
+}
+.container {
+  position: relative;
+}
+.container-w50{
+  width: 50%;
+}
+.lefted{
+  position: absolute;
+  left: 10%;
+  top: 270%;
+}
+.lefted-v{
+  position: absolute;
+  left: 15%;
+  top: 355%;
+}
+.righted-v{
+  position: absolute;
+  right: 10%;
+  top: 360%;
+}
+.righted{
+  position: absolute;
+  right: 10%;
+  top: 270%;
+}
+.flex{
+  display: flex;
+}
+.app_main_image {
+  width: 100%;
+  height: 666px; 
+}
+.centered {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  margin-bottom: -500px;
+  transform: translate(-50%, -50%);
+}
+.menu {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.logoMenu {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+.cta-links {
+  color: #06c;
+  letter-spacing: inherit;
+}
+.cta-links > a {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+.cta-links > a:hover {
+  text-decoration: underline;
+}
+/*
+para los logos
+*/
+.logoRedes {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+.texto {
+  margin: 10px 350px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.flexBox {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  justify-content: center;
+  background-color: chartreuse;
+  height: 500px;
+}
