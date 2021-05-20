@@ -10,41 +10,52 @@
 .container {
   position: relative;
 }
-.container-w50{
+.container-w50 {
+  position: relative;
   width: 50%;
 }
-.lefted{
+.lefted {
   position: absolute;
-  left: 10%;
-  top: 270%;
+  top: 5%;
+  left: 25%;
 }
-.lefted-v{
+.righted {
   position: absolute;
-  left: 15%;
-  top: 355%;
+  top: 5%;
+  left: 25%;
 }
-.righted-v{
+.app_main_image_flex {
+  width: 558px;
+  height: 341px;
+  margin-top: 300px;
+}
+.lefted-v {
   position: absolute;
-  right: 10%;
-  top: 360%;
+  top: 5%;
+  left: 20%;
+  width: 60%;
 }
-.righted{
+.righted-v {
   position: absolute;
-  right: 10%;
-  top: 270%;
+  top: 65%;
+  left: 35%;
+  width: 40%;
 }
-.flex{
+.flex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .app_main_image {
   width: 100%;
-  height: 666px; 
+  height: 624px;
+  background-repeat: no-repeat;
 }
 .centered {
   position: absolute;
-  top: 28%;
+  top: 25%;
   left: 50%;
-  margin-bottom: -500px;
+
   transform: translate(-50%, -50%);
 }
 .menu {
@@ -53,11 +64,20 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
-.logoMenu {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
+.flex-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  width: 50%;
+  margin: auto;
 }
+.menu > div > div {
+  color: azure;
+  margin-left: 50px;
+}
+
 .cta-links {
   color: #06c;
   letter-spacing: inherit;
@@ -90,14 +110,33 @@ para los logos
   font-family: sans-serif;
 }
 .flexBox {
+  color: #86868b;
   display: flex;
   margin: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-
-  justify-content: center;
-  background-color: chartreuse;
-  height: 500px;
+  padding-top: 20px;
+  justify-content: space-around;
+  text-align: left;
+}
+.flexBox > div > ul {
+  list-style: none;
+}
+.flexBox > div > ul > li {
+  margin-top: 20px;
+}
+.flexBox > div > h2 {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+}
+.footer {
+  width: 70%;
+  margin: auto;
+  font-size: 12px;
+}
+.footer > ul {
+  list-style: decimal;
+  text-align: justify;
+  color: #86868b;
 }
